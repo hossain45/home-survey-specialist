@@ -3,8 +3,9 @@
 const Hero = ({ title, bgImage }) => {
   const heroStyle = {
     backgroundImage: `url(${bgImage})`,
-    objectFit: 'cover'
-  }
+    objectFit: "cover",
+    backgroundRepeat: "no-repeat",
+  };
 
   const overlayStyle = {
     backgroundColor: "rgba(0, 0, 0, 0.5)",

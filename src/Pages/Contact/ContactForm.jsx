@@ -5,11 +5,9 @@ import { IoLogoWhatsapp } from "react-icons/io";
 import { FaFacebook } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 
-
-
 const ContactForm = () => {
   return (
-    <div className="max-w-7xl mx-auto px-2 sm:mx-4 lg:mx-0 my-10 md:my-16 lg:my-20 flex flex-col sm:flex-row justify-center items-center sm:justify-start sm:items-start gap-1">
+    <div className="max-w-7xl mx-auto px-2 my-10 md:my-16 lg:my-20 flex flex-col sm:flex-row justify-center items-center sm:justify-start sm:items-start gap-1">
       <form className="flex flex-col justify-start items-start gap-5 w-full">
         <h1 className="text-2xl font-normal text-left mb-2">
           LET&apos;S GET IN TOUCH

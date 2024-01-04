@@ -1,7 +1,14 @@
+import Hero from "../../SharedComponents/Hero";
+import qnaHero from "../../assets/qna-hero.png";
+import QnaCollapse from "./QnaCollapse"
 
 const QnA = () => {
+  const title = "Q & A"
   return (
-    <div>QnA</div>
+    <>
+      <Hero title={title} bgImage={qnaHero} />
+      <QnaCollapse />
+    </>
   )
 }
 
