@@ -42,3 +42,6 @@ QnA ---
 Contact us ---
 	hero (shared)
 	Form 
+
+
+total time - 1h + 10 am-
