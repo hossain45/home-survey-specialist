@@ -95,7 +95,7 @@ const Navbar = () => {
       <div className="flex grow flex-col justify-center items-center">
         <div className="bg-[#2a2d34] h-4 w-full"></div>
         {/* nav buttons for sm:flex  */}
-        <div className="w-full hidden sm:flex justify-between items-center p-2">
+        <div className="w-full hidden sm:flex justify-between items-center p-1">
           <div className="flex">
             <ul className="flex justify-center items-center gap-3">
               {navLinks}
@@ -105,7 +105,7 @@ const Navbar = () => {
             <button className="myBtn hover:myBtn focus:myBtn">
               <div className="flex justify-center items-center gap-2">
                 <IoCall />
-                <div>07898232710</div>
+                <div className="text-base">07898232710</div>
               </div>
             </button>
           </div>
@@ -160,7 +160,6 @@ const Navbar = () => {
         </div>
 
         <div
-          // className={isOpen ? "w-full absolute  top-0 left-0 translate-x-0 transition-transform " : "hidden"}
           className={`w-full absolute top-0 left-0 transition-transform ${
             isOpen ? "translate-x-0" : "translate-x-full"
           }`}
