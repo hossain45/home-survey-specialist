@@ -1,6 +1,6 @@
 import { Link, NavLink } from "react-router-dom";
 import { IoCall } from "react-icons/io5";
-import '../Styles/Button.css'
+import "../Styles/Button.css";
 import { useState } from "react";
 
 const Navbar = () => {
@@ -16,7 +16,7 @@ const Navbar = () => {
       <NavLink
         to="/"
         className={({ isActive, isPending }) =>
-          `font-medium text-base ${
+          ` ${
             isPending
               ? "pending"
               : isActive
@@ -30,7 +30,7 @@ const Navbar = () => {
       <NavLink
         to="/service"
         className={({ isActive, isPending }) =>
-          `font-medium text-base ${
+          ` ${
             isPending
               ? "pending"
               : isActive
@@ -44,7 +44,7 @@ const Navbar = () => {
       <NavLink
         to="/about"
         className={({ isActive, isPending }) =>
-          `font-medium text-base ${
+          ` ${
             isPending
               ? "pending"
               : isActive
@@ -58,7 +58,7 @@ const Navbar = () => {
       <NavLink
         to="/qna"
         className={({ isActive, isPending }) =>
-          `font-medium text-base ${
+          ` ${
             isPending
               ? "pending"
               : isActive
@@ -72,7 +72,7 @@ const Navbar = () => {
       <NavLink
         to="/contact"
         className={({ isActive, isPending }) =>
-          `font-medium text-base ${
+          `${
             isPending
               ? "pending"
               : isActive
@@ -85,7 +85,6 @@ const Navbar = () => {
       </NavLink>
     </>
   );
-  
 
   return (
     <div className="relative flex justify-center items-center">
@@ -97,7 +96,7 @@ const Navbar = () => {
         {/* nav buttons for sm:flex  */}
         <div className="w-full hidden sm:flex justify-between items-center p-1">
           <div className="flex">
-            <ul className="flex justify-center items-center gap-3">
+            <ul className="flex justify-center items-center gap-3 font-medium text-base">
               {navLinks}
             </ul>
           </div>
@@ -117,7 +116,7 @@ const Navbar = () => {
             onClick={toggleDropdown}
             data-collapse-toggle="navbar-hamburger"
             type="button"
-            className="myBtn2 absolute z-10"
+            className="myBtn2 absolute z-30"
             aria-controls="navbar-hamburger"
             aria-expanded="false"
           >
@@ -159,16 +158,20 @@ const Navbar = () => {
           </button>
         </div>
 
+        {/* todo: transition effect should not take space  */}
+
         <div
-          className={`w-full absolute top-0 left-0 transition-transform ${
-            isOpen ? "translate-x-0" : "translate-x-full"
+          className={` w-full absolute z-20 top-0 left-0 transition-transform ${
+            isOpen ? "translate-x-0" : "-translate-x-full"
           }`}
-          style={{ transitionDuration: "0.3s" }}
+          style={{
+            transitionDuration: "0.3s",
+          }}
           id="navbar-hamburger"
         >
           <ul
             onClick={toggleDropdown}
-            className="flex flex-col font-medium p-4 gap-2 bg-gray-50"
+            className="flex flex-col font-medium px-4 pt-12 pb-4 gap-4 bg-gray-50 text-xl"
           >
             {navLinks}
           </ul>
@@ -176,6 +179,6 @@ const Navbar = () => {
       </div>
     </div>
   );
-}
+};
 
-export default Navbar
+export default Navbar;
