@@ -109,7 +109,12 @@ const QnaCollapse = () => {
     console.log(key);
   };
   return (
-    <Collapse className="max-w-7xl mx-auto px-2 my-10 md:my-16 lg:my-20" items={items} defaultActiveKey={["1"]} onChange={onChange} />
+    <Collapse
+      className="max-w-4xl mx-auto px-2 my-10 md:my-16 lg:my-20"
+      items={items}
+      defaultActiveKey={["1"]}
+      onChange={onChange}
+    />
   );
 };
 
