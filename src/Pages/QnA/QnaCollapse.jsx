@@ -94,11 +94,11 @@ const items = [
       <p>
         We will be happy to take any queries or discuss with you any concerns
         after you have received the report. Please get in touch via email at
-        <span className="text-[#991e14] px-1 font-bold">
+        <span className="text-myColor px-1 font-bold">
           enquiries@homesurveysspecialist.co.uk
         </span>
         Or call us on
-        <span className="text-[#991e14] pl-1 font-bold">07898 232710</span> .
+        <span className="text-myColor pl-1 font-bold">07898 232710</span> .
       </p>
     ),
   },
@@ -118,4 +118,4 @@ const QnaCollapse = () => {
   );
 };
 
-export default QnaCollapse
+export default QnaCollapse;

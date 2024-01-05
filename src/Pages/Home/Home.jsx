@@ -1,7 +1,18 @@
+import CarouselHome from "./CarouselHome"
+import HomeSurvey from "./HomeSurvey"
+import WhoWeAre from "./WhoWeAre"
+import WeCanHelp from "./WeCanHelp"
+import GetInTouch from "./GetInTouch"
 
 const Home = () => {
   return (
-    <div>Home</div>
+    <>
+      <CarouselHome />
+      <HomeSurvey />
+      <WhoWeAre />
+      <WeCanHelp />
+      <GetInTouch />
+    </>
   )
 }
 

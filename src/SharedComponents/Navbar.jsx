@@ -21,8 +21,8 @@ const Navbar = () => {
             isPending
               ? "pending"
               : isActive
-              ? "text-[#991e14] active"
-              : "bg-black bg-clip-text text-transparent hover:text-[#991e14] "
+              ? "text-myColor active"
+              : "bg-black bg-clip-text text-transparent hover:text-myColor "
           }`
         }
       >
@@ -35,8 +35,8 @@ const Navbar = () => {
             isPending
               ? "pending"
               : isActive
-              ? "text-[#991e14] active"
-              : "bg-black bg-clip-text text-transparent hover:text-[#991e14] "
+              ? "text-myColor active"
+              : "bg-black bg-clip-text text-transparent hover:text-myColor "
           }`
         }
       >
@@ -49,8 +49,8 @@ const Navbar = () => {
             isPending
               ? "pending"
               : isActive
-              ? "text-[#991e14] active"
-              : "bg-black bg-clip-text text-transparent hover:text-[#991e14] "
+              ? "text-myColor active"
+              : "bg-black bg-clip-text text-transparent hover:text-myColor "
           }`
         }
       >
@@ -63,8 +63,8 @@ const Navbar = () => {
             isPending
               ? "pending"
               : isActive
-              ? "text-[#991e14] active"
-              : "bg-black bg-clip-text text-transparent hover:text-[#991e14] "
+              ? "text-myColor active"
+              : "bg-black bg-clip-text text-transparent hover:text-myColor "
           }`
         }
       >
@@ -77,8 +77,8 @@ const Navbar = () => {
             isPending
               ? "pending"
               : isActive
-              ? "text-[#991e14] active"
-              : "bg-black bg-clip-text text-transparent hover:text-[#991e14] "
+              ? "text-myColor active"
+              : "bg-black bg-clip-text text-transparent hover:text-myColor "
           }`
         }
       >
@@ -91,13 +91,13 @@ const Navbar = () => {
     <div className="relative flex justify-center items-center">
       <Link
         to={"/"}
-        className="flex justify-center space-x-3 lg:justify-start bg-[#991e14] h-full rounded-br-3xl"
+        className="flex justify-center space-x-3 lg:justify-start bg-myColor h-full rounded-br-3xl"
       >
         <div className="flex items-center justify-center w-44 h-full  ">
           <img src={logo} alt="logo" className="w-40 h-16" />
         </div>
       </Link>
-      <div className="flex grow flex-col justify-center items-center bg-[#991e14]">
+      <div className="flex grow flex-col justify-center items-center bg-myColor">
         <div className="bg-[#2a2d34] h-4 w-full rounded-tl-full"></div>
         {/* nav buttons for sm:flex  */}
         <div className="w-full hidden sm:flex justify-between items-center p-1 bg-white">

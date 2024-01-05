@@ -19,7 +19,7 @@ const ContactForm = () => {
             type="name"
             name="name"
             required
-            className="peer h-full w-full rounded-md border border-blue-gray-200 border-t-transparent bg-transparent px-3 py-3 font-sans text-sm font-normal text-blue-gray-700 outline outline-0 transition-all placeholder-shown:border placeholder-shown:border-blue-gray-200  placeholder-shown:border-t-blue-gray-200 focus:border-2 focus:border-[#991e14]  focus:outline-0 disabled:border-0 disabled:bg-blue-gray-50 duration-200 focus:placeholder-shown:pl-2 focus:placeholder-shown:opacity-100"
+            className="peer h-full w-full rounded-md border border-blue-gray-200 border-t-transparent bg-transparent px-3 py-3 font-sans text-sm font-normal text-blue-gray-700 outline outline-0 transition-all placeholder-shown:border placeholder-shown:border-blue-gray-200  placeholder-shown:border-t-blue-gray-200 focus:border-2 focus:border-myColor  focus:outline-0 disabled:border-0 disabled:bg-blue-gray-50 duration-200 focus:placeholder-shown:pl-2 focus:placeholder-shown:opacity-100"
             placeholder="John Doe"
           />
         </div>
@@ -30,7 +30,7 @@ const ContactForm = () => {
             type="text"
             name="number"
             required
-            className="peer h-full w-full rounded-md border border-blue-gray-200 border-t-transparent bg-transparent px-3 py-3 font-sans text-sm font-normal text-blue-gray-700 outline outline-0 transition-all placeholder-shown:border placeholder-shown:border-blue-gray-200  placeholder-shown:border-t-blue-gray-200 focus:border-2 focus:border-[#991e14]  focus:outline-0 disabled:border-0 disabled:bg-blue-gray-50 duration-200 focus:placeholder-shown:pl-2 focus:placeholder-shown:opacity-100"
+            className="peer h-full w-full rounded-md border border-blue-gray-200 border-t-transparent bg-transparent px-3 py-3 font-sans text-sm font-normal text-blue-gray-700 outline outline-0 transition-all placeholder-shown:border placeholder-shown:border-blue-gray-200  placeholder-shown:border-t-blue-gray-200 focus:border-2 focus:border-myColor  focus:outline-0 disabled:border-0 disabled:bg-blue-gray-50 duration-200 focus:placeholder-shown:pl-2 focus:placeholder-shown:opacity-100"
             placeholder="07898232710"
           />
         </div>
@@ -41,7 +41,7 @@ const ContactForm = () => {
             type="email"
             name="email"
             required
-            className="peer h-full w-full rounded-md border border-blue-gray-200 border-t-transparent bg-transparent px-3 py-3 font-sans text-sm font-normal text-blue-gray-700 outline outline-0 transition-all placeholder-shown:border placeholder-shown:border-blue-gray-200  placeholder-shown:border-t-blue-gray-200 focus:border-2 focus:border-[#991e14]  focus:outline-0 disabled:border-0 disabled:bg-blue-gray-50 duration-200 focus:placeholder-shown:pl-2 focus:placeholder-shown:opacity-100"
+            className="peer h-full w-full rounded-md border border-blue-gray-200 border-t-transparent bg-transparent px-3 py-3 font-sans text-sm font-normal text-blue-gray-700 outline outline-0 transition-all placeholder-shown:border placeholder-shown:border-blue-gray-200  placeholder-shown:border-t-blue-gray-200 focus:border-2 focus:border-myColor  focus:outline-0 disabled:border-0 disabled:bg-blue-gray-50 duration-200 focus:placeholder-shown:pl-2 focus:placeholder-shown:opacity-100"
             placeholder="homesurvey@example.com"
           />
         </div>
@@ -52,7 +52,7 @@ const ContactForm = () => {
             type="text"
             name="message"
             required
-            className="peer h-full w-full rounded-md border border-blue-gray-200 border-t-transparent bg-transparent px-3 py-3 font-sans text-sm font-normal text-blue-gray-700 outline outline-0 transition-all placeholder-shown:border placeholder-shown:border-blue-gray-200  placeholder-shown:border-t-blue-gray-200 focus:border-2 focus:border-[#991e14]  focus:outline-0 disabled:border-0 disabled:bg-blue-gray-50 duration-200 focus:placeholder-shown:pl-2 focus:placeholder-shown:opacity-100"
+            className="peer h-full w-full rounded-md border border-blue-gray-200 border-t-transparent bg-transparent px-3 py-3 font-sans text-sm font-normal text-blue-gray-700 outline outline-0 transition-all placeholder-shown:border placeholder-shown:border-blue-gray-200  placeholder-shown:border-t-blue-gray-200 focus:border-2 focus:border-myColor  focus:outline-0 disabled:border-0 disabled:bg-blue-gray-50 duration-200 focus:placeholder-shown:pl-2 focus:placeholder-shown:opacity-100"
             placeholder="Message..."
           />
         </div>
@@ -63,23 +63,23 @@ const ContactForm = () => {
           CONTACT US
         </h1>
         <div className="flex justify-center items-center gap-4 pl-3">
-          <IoCall className="text-[#991e14] text-xl" />
+          <IoCall className="text-myColor text-xl" />
           <div className="text-2xl font-bold">07898232710</div>
         </div>
         <div className="flex justify-center items-center gap-4 pl-3">
-          <MdEmail className="text-[#991e14] text-xl" />
+          <MdEmail className="text-myColor text-xl" />
           <div className="text-base font-light">
             info@homesurveysspecialist.co.uk
           </div>
         </div>
         <div className="flex justify-center items-center gap-4 pl-3">
-          <FaLocationDot className="text-[#991e14] text-xl" />
+          <FaLocationDot className="text-myColor text-xl" />
           <div className="text-base font-light">
             16 Titan Court, Laporte Way, Luton, England, LU4 8EF{" "}
           </div>
         </div>
         <h1 className="text-2xl font-normal text-left my-3">SOCIAL MEDIA</h1>
-        <div className="flex justify-center items-start gap-3 text-2xl text-[#991e14] pl-3">
+        <div className="flex justify-center items-start gap-3 text-2xl text-myColor pl-3">
           <FaFacebook />
           <FaXTwitter />
           <IoLogoWhatsapp />
