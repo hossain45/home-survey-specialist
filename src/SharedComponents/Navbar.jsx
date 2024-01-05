@@ -2,6 +2,7 @@ import { Link, NavLink } from "react-router-dom";
 import { IoCall } from "react-icons/io5";
 import "../Styles/Button.css";
 import { useState } from "react";
+import logo from "../assets/HSS-logo-sm-w.png";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -88,13 +89,18 @@ const Navbar = () => {
 
   return (
     <div className="relative flex justify-center items-center">
-      <Link to={"/"}>
-        <div className="">logo</div>
+      <Link
+        to={"/"}
+        className="flex justify-center space-x-3 lg:justify-start bg-[#991e14] h-full rounded-br-3xl"
+      >
+        <div className="flex items-center justify-center w-44 h-full  ">
+          <img src={logo} alt="logo" className="w-40 h-16" />
+        </div>
       </Link>
-      <div className="flex grow flex-col justify-center items-center">
-        <div className="bg-[#2a2d34] h-4 w-full"></div>
+      <div className="flex grow flex-col justify-center items-center bg-[#991e14]">
+        <div className="bg-[#2a2d34] h-4 w-full rounded-tl-full"></div>
         {/* nav buttons for sm:flex  */}
-        <div className="w-full hidden sm:flex justify-between items-center p-1">
+        <div className="w-full hidden sm:flex justify-between items-center p-1 bg-white">
           <div className="flex">
             <ul className="flex justify-center items-center gap-3 font-medium text-base">
               {navLinks}
@@ -111,7 +117,7 @@ const Navbar = () => {
         </div>
 
         {/* dropdown menu for nav buttons for small screen */}
-        <div className="w-full flex justify-end items-end p-2 sm:hidden">
+        <div className="w-full flex justify-end items-end p-1 sm:hidden bg-white">
           <button
             onClick={toggleDropdown}
             data-collapse-toggle="navbar-hamburger"

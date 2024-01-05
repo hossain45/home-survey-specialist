@@ -5,23 +5,22 @@ import { IoLogoWhatsapp } from "react-icons/io";
 import { FaFacebook } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { Link } from "react-router-dom";
+import logo from "../assets/HSS-logo-sm-w.png";
 
 const Footer = () => {
   return (
-    <footer className="px-4 divide-y bg-gray-800 text-gray-100">
-      <div className="container flex flex-col justify-between py-10 mx-auto space-y-8 lg:flex-row lg:space-y-0">
+    <footer className=" px-4 divide-y bg-gray-800 text-gray-100">
+      <div className="container max-w-6xl mx-auto flex flex-col justify-between py-10 space-y-8 lg:flex-row lg:space-y-0">
         {/* brand logo  */}
-        <div className="lg:w-1/3">
-          <a
-            rel="noopener noreferrer"
-            href="#"
+        <div className="lg:w-1/4">
+          <Link
+            to={"/"}
             className="flex justify-center space-x-3 lg:justify-start"
           >
-            <div className="flex items-center justify-center w-12 h-12 rounded-full dark:bg-violet-400"></div>
-            <span className="self-center text-2xl font-semibold">
-              Brand name
-            </span>
-          </a>
+            <div className="flex items-center justify-center w-44 h-20 rounded-full ">
+              <img src={logo} alt="logo" className="w-44 h-20" />
+            </div>
+          </Link>
         </div>
 
         <div className="flex flex-col sm:flex-row justify-between items-start text-sm gap-x-3 gap-y-8 lg:w-2/3 ">
