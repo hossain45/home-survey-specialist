@@ -1,4 +1,3 @@
-
 import { Collapse } from "antd";
 
 const items = [
@@ -104,6 +103,7 @@ const items = [
     ),
   },
 ];
+
 const QnaCollapse = () => {
   const onChange = (key) => {
     console.log(key);

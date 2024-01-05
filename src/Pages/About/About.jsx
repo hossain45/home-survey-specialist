@@ -1,8 +1,18 @@
+import Hero from "../../SharedComponents/Hero";
+import WhyChooseUs from "../../SharedComponents/WhyChooseUs";
+import aboutHero from "../../assets/about-hero1.jpg";
+import WhyHomeSurvey from "./WhyHomeSurvey";
 
 const About = () => {
-  return (
-    <div>About</div>
-  )
-}
+  const title = "About Us"
 
-export default About
+  return (
+    <>
+      <Hero title={title} bgImage={aboutHero} />
+      <WhyHomeSurvey />
+      <WhyChooseUs />
+    </>
+  );
+};
+
+export default About;
