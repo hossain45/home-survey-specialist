@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 todo:
 
 Problems -
@@ -47,4 +45,3 @@ Contact us ---
 
 
 total time - 1h + 10 am-
->>>>>>> 2de6681bcb02770a47742f9cdce1667202fe4cf0
