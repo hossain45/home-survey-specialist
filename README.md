@@ -13,7 +13,7 @@ pages-
 SharedComponents ---
 	Navbar: not sticky, active:red, hover:blue
 	Footer: responsive
-	why choose us (shared)
+	why choose us (sharedComponents)
 	hero
 
 Home ---
@@ -24,14 +24,14 @@ Home ---
 	get in touch (link to contact us)
 
 Our services ---
-	hero (shared)
+	hero (sharedComponents)
 	description
 	service details
-	why choose us (shared)
+	why choose us (sharedComponents)
 	need help
 
 About ---
-	hero (shared)
+	hero (sharedComponents)
 	description: includes utube vdo
 	why choose us
 
