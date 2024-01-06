@@ -1,7 +1,7 @@
 import CarouselHome from "./CarouselHome"
 import HomeSurvey from "./HomeSurvey"
 import WhoWeAre from "./WhoWeAre"
-import WeCanHelp from "./WeCanHelp"
+import WhoWeCanHelp from "./WhoWeCanHelp"
 import GetInTouch from "./GetInTouch"
 
 const Home = () => {
@@ -10,7 +10,7 @@ const Home = () => {
       <CarouselHome />
       <HomeSurvey />
       <WhoWeAre />
-      <WeCanHelp />
+      <WhoWeCanHelp />
       <GetInTouch />
     </>
   )
