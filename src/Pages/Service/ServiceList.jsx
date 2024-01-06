@@ -3,6 +3,7 @@ import rpsa2 from "../../assets/rpsa2.jpg"
 import rpsa3 from "../../assets/rpsa3.jpg"
 import rpsa4 from "../../assets/rpsa4.jpg"
 const ServiceList = () => {
+  // service details content
   const items = [
     {
       key: 1,

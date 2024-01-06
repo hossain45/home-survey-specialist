@@ -3,12 +3,14 @@ import { Link } from "react-router-dom";
 
 const CarouselHome = () => {
 
+  // array of images for Carousel
   const bgImages = [
   "https://images.pexels.com/photos/7710011/pexels-photo-7710011.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
   "https://images.pexels.com/photos/816198/pexels-photo-816198.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
   "https://images.pexels.com/photos/5524167/pexels-photo-5524167.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
   ];
   
+  // Carousel customization 
   const settings = {
     autoplay: true, 
     autoplaySpeed: 2000, 
@@ -16,6 +18,7 @@ const CarouselHome = () => {
 
 return (
   <div className="relative ">
+    {/* Carousel  */}
     <Carousel autoplay {...settings}>
       {bgImages.map((image, index) => (
         <div key={index} className="h-[60vh] bg-cover relative">
@@ -27,6 +30,7 @@ return (
         </div>
       ))}
     </Carousel>
+    {/* content on top of slides  */}
     <div className="absolute w-[250px] sm:w-[350px] md:w-[400px] top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 md:left-44 md:-translate-x-0 text-left z-10 flex flex-col justify-start gap-2 items-start  p-4 bg-myColor">
       <h2 className="font-bold text-2xl sm:text-3xl md:text-4xl text-white">
         Survey Your Home

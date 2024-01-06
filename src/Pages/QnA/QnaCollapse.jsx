@@ -1,5 +1,5 @@
 import { Collapse } from "antd";
-
+// FAQ and answers 
 const items = [
   {
     key: "1",

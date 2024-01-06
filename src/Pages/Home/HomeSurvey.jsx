@@ -4,6 +4,7 @@ import houseIcon from "../../assets/house-icon.png"
 import rpsaIcon from "../../assets/rpsa-icon.png"
 
 const HomeSurvey = () => {
+  // background Image style 
   const bgStyle = {
     backgroundImage: `url(${bgHs})`,
     backgroundRepeat: "repeat",
@@ -13,16 +14,18 @@ const HomeSurvey = () => {
       className="flex flex-col justify-center items-center py-8 sm:py-10 h-auto lg:h-[80vh]"
       style={bgStyle}
     >
+      {/* titles */}
       <h3 className="text-myColor uppercase text-center">
-        ——{" "}
+        ——
         <span className="text-white bg-slate-800 p-1 rounded-lg">
           Home Survey
-        </span>{" "}
+        </span>
         ——
       </h3>
       <h2 className="font-bold text-2xl sm:text-4xl md:text-5xl text-white text-center py-6 sm:py-10 w-3/4">
         Need Your Home Surveyed?
       </h2>
+      {/* cards container */}
       <div className="max-w-6xl sm:px-3 flex flex-col sm:flex-row justify-center items-center gap-1">
         {/* specialists */}
         <div className="flex flex-row sm:flex-col  justify-between items-center rounded-sm bg-myColor w-full sm:h-[250px] ">
@@ -33,7 +36,7 @@ const HomeSurvey = () => {
               className="h-12 sm:h-20 w-12 sm:w-20 object-contain "
             ></img>
           </div>
-          <p className="text-white font-semibold text-lg text-center p-4 sm:bg-black sm:min-h-20 w-full">
+          <p className="text-white font-semibold text-lg text-center p-4 sm:bg-black sm:min-h-24 md:min-h-20 w-full">
             QUALIFIED SPECIALISTS
           </p>
         </div>
@@ -46,7 +49,7 @@ const HomeSurvey = () => {
               className="h-12 sm:h-20 w-12 sm:w-20 object-contain"
             ></img>
           </div>
-          <p className="text-white font-semibold text-lg text-center p-4 sm:bg-black sm:min-h-20 w-full">
+          <p className="text-white font-semibold text-lg text-center p-4 sm:bg-black sm:min-h-24 md:min-h-20 w-full">
             CARING FOR YOUR INTERESTS
           </p>
         </div>
@@ -57,7 +60,7 @@ const HomeSurvey = () => {
               48 HOUR
             </div>
           </div>
-          <p className="text-white font-semibold text-lg text-center p-4 sm:bg-black sm:min-h-20 w-full">
+          <p className="text-white font-semibold text-lg text-center p-4 sm:bg-black sm:min-h-24 md:min-h-20 w-full">
             REPORT DELIVERY SERVICE
           </p>
         </div>
@@ -70,7 +73,7 @@ const HomeSurvey = () => {
               className="h-12 w-16 sm:h-32 sm:w-32 object-contain "
             ></img>
           </div>
-          <p className="text-white font-semibold text-lg text-center p-4 sm:bg-black sm:min-h-20 w-full">
+          <p className="text-white font-semibold text-lg text-center p-4 sm:bg-black sm:min-h-24 md:min-h-20 w-full">
             A REGISTERED MEMBER
           </p>
         </div>

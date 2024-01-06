@@ -5,6 +5,7 @@ import rpsa3 from "../../assets/rpsa3.jpg";
 import rpsa4 from "../../assets/rpsa4.jpg";
 
 const WhoWeCanHelp = () => {
+  // content for cards
   const items = [
     {
       key: 1,
@@ -43,6 +44,7 @@ const WhoWeCanHelp = () => {
       <h2 className="font-bold text-2xl sm:text-3xl md:text-4xl text-black text-center py-6 sm:py-10 w-4/5">
         Let us help you to choose the right survey for you
       </h2>
+      {/* card container */}
       <div className="m-3 sm:m-5 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-3 justify-items-stretch ">
         {items.map((item) => (
           <div key={item.key} className="w-full flex flex-col justify-between items-start bg-white rounded-lg shadow-lg">
